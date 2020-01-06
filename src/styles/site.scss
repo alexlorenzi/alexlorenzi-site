@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono:400,700&display=swap");
+@import "_variables";
+@import "_slant";
+
+html,
+body {
+  font-family: $sans;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  line-height: 1.5rem;
+}
+
+////////////////////////
+// Components
+////////////////////////
+.container {
+  height: 100%;
+}
+
+.content {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 800;
+  display: inline-block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: $fg;
+  border-radius: 0.25rem;
+  background-color: $accent;
+
+  &:hover {
+    color: darken($fg, 5%);
+    background-color: darken($accent, 5%);
+  }
+}
+
+////////////////////////
+// Sections
+////////////////////////
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  height: calc(100% - #{$unit-10});
+  min-height: 325px;
+  margin-bottom: $slant-padding;
+  padding: $unit-5;
+  color: $fg;
+  background-color: $bg;
+
+  @include slant(after);
+  justify-content: center;
+
+  @media (min-width: $sm) {
+    height: calc(100% - #{$unit-20});
+    min-height: 425px;
+    padding: $unit-10;
+  }
+  @media (min-width: $md) {
+    height: calc(100% - #{$unit-20});
+    min-height: 300px;
+    padding: $unit-10;
+  }
+  @media (min-width: $lg) {
+    height: calc(100% - #{$unit-40});
+    min-height: 325px;
+    padding: $unit-20;
+  }
+
+  &__title {
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0.5rem 0 2rem;
+    letter-spacing: 0.025em;
+    text-shadow: rgba(255, 255, 255, 0.15) 0 5px 35px;
+
+    @media (min-width: $sm) {
+      font-size: 4rem;
+    }
+    @media (min-width: $md) {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__subheader {
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.003em;
+    color: darken($color: $fg, $amount: 10%);
+
+    @media (min-width: $sm) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: $md) {
+      font-size: 1.875rem;
+    }
+  }
+}
+
+.resume {
+  position: relative;
+  padding: $unit-10;
+  color: $fg-2;
+  background-color: $bg-2;
+
+  @media (min-width: $sm) {
+    padding: $unit-10;
+  }
+  @media (min-width: $md) {
+    padding: $unit-10;
+  }
+  @media (min-width: $lg) {
+    padding: $unit-20;
+  }
+
+  @include slant(before);
+
+  a {
+    color: $accent;
+    &:visited {
+      color: darken($accent, 5%);
+    }
+  }
+
+  h1 {
+    font-family: $mono;
+    color: $accent-2;
+  }
+
+  h2 {
+    font-family: $mono;
+    position: relative;
+    text-align: center;
+    color: $accent-2;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: calc(50% - #{$unit-1 / 2});
+      width: 27%;
+      content: "";
+      border-top: $unit-1 solid;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    @media (max-width: $sm) {
+      &::before,
+      &::after {
+        width: 25%;
+      }
+    }
+  }
+
+  hr {
+    height: $unit-0;
+    border: none;
+    border-bottom: $unit-0 solid $accent-2;
+  }
+
+  em {
+    color: $accent-2;
+  }
+
+  strong {
+    font-family: $mono;
+    color: $accent-2;
+  }
+
+  ul {
+    padding-left: $unit-6;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    thead {
+      display: none;
+    }
+    td {
+      padding: $unit-3 0;
+      border-bottom: $unit-0 solid $accent-2;
+    }
+    @media (max-width: $sm) {
+      td {
+        display: block;
+      }
+      td:nth-child(1) {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

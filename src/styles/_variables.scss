@@ -1,0 +1,40 @@
+// Colours
+$fg: #eeeeee;
+$bg: #232931;
+$accent: #4ecca3;
+
+$fg-2: #232931;
+$bg-2: #eeeeee;
+$accent-2: #393e46;
+
+// Fonts
+$mono: "Roboto Mono", monospace;
+$sans: "Roboto", sans-serif;
+
+// Sizes
+$unit-0: 0.05rem;
+//
+$unit-1: 0.2rem;
+$unit-2: #{2 * $unit-1};
+$unit-3: #{3 * $unit-1};
+$unit-4: #{4 * $unit-1};
+$unit-5: #{5 * $unit-1};
+$unit-6: #{6 * $unit-1};
+//
+$unit-10: #{10 * $unit-1};
+$unit-15: #{15 * $unit-1};
+$unit-20: #{20 * $unit-1};
+$unit-25: #{25 * $unit-1};
+$unit-40: #{40 * $unit-1};
+
+// Breakpoints
+$sm: 400px;
+$md: 600px;
+$lg: 900px;
+
+$max-width: 1200px;
+
+// Slant
+$slant-angle: 4deg;
+$slant-padding: 120px;
+$slant-intercept: 1716px; // $slant-padding / tan($slant-angle)
