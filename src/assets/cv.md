@@ -3,7 +3,6 @@
 |                   |                          |
 | :---------------- | :----------------------- |
 | **Email Address** | lorenzi.alex@gmail.com   |
-| **Phone Number**  | (929) 403-7513           |
 | **Web**           | www.alexanderlorenzi.com |
 
 ## Profile
