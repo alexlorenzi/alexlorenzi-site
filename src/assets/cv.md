@@ -3,7 +3,6 @@
 |                   |                          |
 | :---------------- | :----------------------- |
 | **Email Address** | lorenzi.alex@gmail.com   |
-| **Phone Number**  | (929) 403-7513           |
 | **Web**           | www.alexanderlorenzi.com |
 
 ## Profile
@@ -78,6 +77,6 @@ _Oct. 2003 - Jun. 2006_
 
 **Java:** OSGI, Spring, JBoss, EJB, JSP, Web Services, AEM, AEM Forms
 
-**JavaScript:** React.js, Backbone.js, Angular.js, Grunt, Gulp, Webpack, Node.js, HTML5, CSS3
+**JavaScript:** React.js, Angular.js, Grunt, Gulp, Webpack, Node.js, HTML5, CSS3
 
 **Methodologies:** Agile, Test-Driven Development
