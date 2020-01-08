@@ -47,13 +47,12 @@ body {
 	flex: 1 1 0;
 	height: calc(100% - #{$unit-10});
 	min-height: 325px;
-	margin-bottom: $slant-padding;
 	padding: $unit-5;
 	color: $fg;
 	background-color: $bg;
+	justify-content: center;
 
 	@include slant(after);
-	justify-content: center;
 
 	@media (min-width: $sm) {
 		height: calc(100% - #{$unit-20});
@@ -111,6 +110,7 @@ body {
 	padding: $unit-10;
 	color: $fg-2;
 	background-color: $bg-2;
+	z-index: -2;
 
 	@media (min-width: $sm) {
 		padding: $unit-10;

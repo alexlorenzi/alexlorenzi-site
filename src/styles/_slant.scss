@@ -1,6 +1,17 @@
 @import 'variables';
 
 @mixin slant($position) {
+	// IF position === after then put some padding at the bottom of the elemt for the slant to live in
+	@if ($position == after) {
+		& {
+			margin-bottom: $slant-padding;
+			@media (min-width: $lg) {
+				margin-bottom: #{$slant-padding * 2};
+			}
+		}
+	}
+
+	// Create slant
 	&::#{$position} {
 		content: '';
 		position: absolute;
@@ -12,8 +23,12 @@
 		background: inherit;
 		transform: skewY($slant-angle);
 
+		// If slant at top, move up to meet the downward slant
 		@if ($position == before) {
 			top: -$slant-padding;
+			@media (min-width: $lg) {
+				top: -#{$slant-padding * 2};
+			}
 		} @else {
 			top: 0;
 		}
