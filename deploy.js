@@ -7,5 +7,4 @@ sitedeploy({
 	source: './dist',
 	host: 'github.com',
 	ssh: true,
-	delete_paths: ['!CNAME'],
 });
