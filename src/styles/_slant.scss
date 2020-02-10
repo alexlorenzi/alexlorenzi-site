@@ -1,7 +1,7 @@
 @import 'variables';
 
 @mixin slant($position) {
-	// IF position === after then put some padding at the bottom of the elemt for the slant to live in
+	// IF position === after then put some padding at the bottom of the element for the slant to live in
 	@if ($position == after) {
 		& {
 			margin-bottom: $slant-padding;

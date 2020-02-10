@@ -12,6 +12,7 @@
 		"deploy": "yarn clean && yarn build-prod && node ./deploy.js"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.12.1",
 		"remarkable": "^2.0.0"
 	},
 	"devDependencies": {
