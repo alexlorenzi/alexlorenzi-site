@@ -21,7 +21,7 @@ Reuters, National History Museum, Astute Solutions and more. Key client projects
 include:
 
 - Lead design and development of HSBC digital forms portal allowing front-line staff to build custom sales cases for high-net-worth clients. The system leverages multiple RESTful APIs and is integrated with Adobe Sign to facilitate e-signatures. Secured additional new business to launch system in multiple markets.\
-  **Technologies Used: AEM, Java, OSGi, HTML5, React.js, RESTful APIs.**
+  **Technologies Used: AEM, Java, OSGi, HTML5, React, RESTful APIs.**
 
 - Secured new business with Adobe to facilitate the migration of Illinois’ lottery website on AEM platform with Camelot. Partnered with Camelot’s Greece-based development team to gather requirements, lead demos and oversee the London team developing the site.\
   **Technologies Used: AEM, Java, OSGi, HTML5, Javascript, Spock, LESS**
@@ -81,8 +81,8 @@ _Oct. 2003 - Jun. 2006_
 
 ## Skills
 
-**Java:** OSGI, Spring, JBoss, EJB, JSP, Web Services, AEM, AEM Forms
+**Java:** OSGI, Spring, JBoss, EJB, JSP, SQL, Web Services, AEM, AEM Forms
 
-**JavaScript:** React.js, Angular.js, Grunt, Gulp, Webpack, Node.js, HTML5, CSS3
+**JavaScript:** React, AngularJS, Grunt, Gulp, Webpack, Node.js, HTML5, CSS3, Sass
 
-**Methodologies:** Agile, Test-Driven Development
+**Methodologies:** Agile, Test-Driven Development, Continuous Integration

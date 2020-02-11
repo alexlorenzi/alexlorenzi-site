@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono:400,700&display=swap');
+
+$fa-font-path: '../assets/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
 @import '_variables';
 @import '_slant';
 
@@ -28,6 +33,7 @@ body {
 	font-weight: 800;
 	display: inline-block;
 	padding: $unit-4;
+	margin-right: $unit-2;
 	text-decoration: none;
 	color: $fg;
 	border-radius: 0.25rem;
@@ -37,8 +43,18 @@ body {
 		color: darken($fg, 5%);
 		background-color: darken($accent, 5%);
 	}
-}
 
+	&.more-info {
+		border-radius: 50%;
+		width: $line-height;
+		text-align: center;
+		background-color: darken($fg-2, 10%);
+		&:hover {
+			color: darken($fg, 5%);
+			background-color: darken($fg-2, 15%);
+		}
+	}
+}
 
 ////////////////////////
 // Sections
